@@ -12,9 +12,17 @@
         <activity
             android:name=".FirstActivity"
             android:label="第一个窗口">
-            <intent-filter><!--意图过滤器-->
+            <intent-filter> <!-- 意图过滤器 -->
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" /><!--类别-->
+
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- 类别 -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.example.activitytest.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.activitytest.MY_CATEGORY"/>
             </intent-filter>
         </activity>
     </application>
